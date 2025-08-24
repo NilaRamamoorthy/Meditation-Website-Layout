@@ -216,6 +216,56 @@
         font-size: 30px;
       }
     }
+/* Team */
+
+    .carousel-inner {
+      padding: 2rem 0;
+    }
+
+    .team-card {
+      background-color: #e6ffe6;
+      border-radius: 20px;
+      text-align: center;
+      padding: 1rem;
+      margin: 0 0.5rem;
+    }
+
+    .team-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+
+    .team-card h5 {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #7ced7c;
+      border-radius: 50%;
+      padding: 1.5rem;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      background-color: #b34bff;
+      width: 40px;
+      height: 10px;
+      border-radius: 10px;
+      margin: 0 6px;
+    }
+
+    .carousel-indicators .active {
+      background-color: #7f22dd;
+    }
+
+    @media (max-width: 768px) {
+      .team-card {
+        margin-bottom: 1rem;
+      }
+    }
+
      /* Blog Section */
     
     .section-title {
