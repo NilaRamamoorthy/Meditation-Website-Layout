@@ -1,0 +1,82 @@
+ *{
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+ }
+ /* Custom header styling */
+    .custom-navbar {
+      background-color: #B285C0; /* purple shade */
+      border-radius: 40px;
+      padding: 0.5rem 2rem;
+    }
+    .navbar-brand {
+      font-family: 'Impact', sans-serif;
+      font-size: 1.5rem;
+      color: #fff !important;
+      line-height: 1.2;
+      text-align: center;
+    }
+    .navbar-brand span {
+      display: block;
+    }
+    .nav-link {
+      color: #fff !important;
+      margin: 0 0.8rem;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    .nav-link.active {
+      color: #5a0f2d !important; /* burgundy for active link */
+      font-weight: bold;
+    }
+    .icon-btn {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-left: 1rem;
+      cursor: pointer;
+    }
+    .icon-btn:hover {
+      color: #5a0f2d;
+    }
+    /* Footer */
+     .footer {
+      background-color: #B285C0;
+      color: #fff;
+      padding-top: 20px;
+      border-radius: 40px;
+
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .footer h5 {
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .footer .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      /* line-height: 1; */
+    }
+    .footer .logo span {
+      display: block;
+    }
+    .footer .logo span:first-child {
+      font-size: 3rem;
+    }
+    .footer .footer-img {
+      width: 60px;
+      /* margin-top: 80px; */
+    }
+    .footer .contact-icons {
+      font-size: 1.1rem;
+    }

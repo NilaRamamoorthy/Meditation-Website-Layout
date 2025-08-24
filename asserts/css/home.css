@@ -1,0 +1,312 @@
+    /* Hero Section */
+    
+    .hero-section {
+      background: url('./asserts/images/1920_whatare10benefitsofmeditation.jpg') center center/cover no-repeat;
+      height: 80vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 5%;
+    }
+
+    .join-btn {
+      background: linear-gradient(90deg, #a34ae3, #3267d0);
+      color: #000;
+      font-weight: bold;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+
+    .join-btn:hover {
+      opacity: 0.9;
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        justify-content: center;
+        text-align: center;
+        height: 60vh;
+      }
+
+      .join-btn {
+        font-size: 1rem;
+        padding: 10px 24px;
+        margin-left: 100px;
+      }
+    }
+    /* Dee Stands for */
+      .section-title {
+      color: #74105f;
+      font-weight: bold;
+    }
+
+    .acronym-letter {
+      color: #74105f;
+      font-weight: bold;
+    }
+
+    .acronym-word {
+      font-weight: bold;
+    }
+
+    .acronym-description {
+      margin-bottom: 1rem;
+    }
+
+    .therapy-title {
+      color: #74105f;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .therapy-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 1rem;
+    }
+
+    .therapy-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    .meditation-img {
+      width: 100%;
+      /* max-width: 300px; */
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+    .dee{
+        border-right: 2px solid black;
+    }
+/* Clinic */
+    .clinic-section {
+      background: url('./asserts/images/pastel-green-watercolor-background-free-vector.jpg') center center/cover no-repeat;
+      padding: 50px 0;
+    }
+
+    .clinic-text h5 {
+      color: #000;
+      margin-bottom: 0.5rem;
+    }
+
+    .clinic-text h3 {
+      color: #7c1873;
+      font-weight: bold;
+    }
+
+    .clinic-text p {
+      color: #1d1d1d;
+      font-size: 1.1rem;
+    }
+
+    .btn-gradient {
+      background: linear-gradient(to right, #a34ae3, #3267d0);
+      color: #fff;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: 0.3s ease;
+    }
+
+    .btn-gradient:hover {
+      opacity: 0.9;
+    }
+
+    .stats {
+      background-color: #2b8d96;
+      padding: 30px 0;
+    }
+
+    .stats h4 {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .stats p {
+      margin: 0;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .clinic-text {
+        text-align: center;
+      }
+
+      .clinic-image {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .stats .col-md-3 {
+        margin-bottom: 20px;
+      }
+    }
+
+    /* Service Section */
+    
+    .section-title {
+      text-align: center;
+      color: #7c1873;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .service-card {
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      padding: 20px;
+      /* height: 100%; */
+      min-height: 280px;
+      position: relative;
+      background-color: #fff;
+     transition: all 0.3s ease-in-out;
+  cursor: pointer;
+    }
+
+    .service-card:hover {
+    transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-color: #7c1873;
+    }
+
+    .service-highlight {
+      background-color: #6e6aa6;
+      color: #fff;
+    }
+
+    .service-title {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .read-more {
+      color: #7cb3af;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    .service-icon {
+      font-size: 40px;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .img-service {
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+      height: 100%;
+    }
+
+    @media (max-width: 576px) {
+      .service-icon {
+        font-size: 30px;
+      }
+    }
+     /* Blog Section */
+    
+    .section-title {
+      color: #74105f;
+      font-weight: bold;
+    }
+
+    .blog-card {
+      background-color: #e7ffd8; /* light green */
+      border: none;
+      border-radius: 30px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-card img {
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      object-fit: cover;
+      height: 250px;
+      width: 100%;
+    }
+
+    .blog-card .card-body {
+      padding: 1.5rem;
+    }
+
+    .blog-date {
+      color: #333;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .read-more {
+      color: #333;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    /* FAQ */
+   .faq-heading {
+      color: #74105f;
+      font-weight: bold;
+    }
+
+    .accordion-button {
+      background-color: transparent;
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 1rem 0;
+      border: none;
+      box-shadow: none;
+      color: #000;
+    }
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  color: #B285C0;
+  background-color: transparent;
+  box-shadow: none;
+}
+    .accordion-body {
+      font-size: 1.1rem;
+      padding: 0.5rem 0 1rem 0;
+      border-bottom: 1px solid #000;
+    }
+
+    .accordion-item {
+      border: none;
+      border-bottom: 1px solid #000;
+      background-color: transparent;
+    }
+
+    .accordion-header {
+      border-bottom: 1px solid #000;
+    }
+
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+   

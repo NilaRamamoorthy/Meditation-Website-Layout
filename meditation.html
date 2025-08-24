@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+ <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+NSW:wght@100..400&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- CSS -->
+ <link rel="stylesheet" href="./asserts/css/header.css">
+  <style>
+    
+    .meditation-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-weight: bold;
+      color: #72165b;
+      margin-bottom: 30px;
+    }
+
+    .trial-button {
+      background-color: #000;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-weight: 600;
+      border-radius: 12px;
+      margin: 20px 0;
+      transition: 0.3s ease;
+    }
+
+    .trial-button:hover {
+      background-color: #333;
+    }
+
+    .featured {
+      text-align: left;
+      margin-top: 50px;
+    }
+
+    .featured h6 {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .featured h4 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #72165b;
+    }
+
+    .video-card {
+      position: relative;
+      border-radius: 25px;
+      overflow: hidden;
+      max-width: 350px;
+      margin: 20px auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .video-card video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .video-overlay {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background-color: rgba(255,255,255,0.7);
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .video-footer {
+      background: #f5f5f5;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .video-footer h6 {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .video-time {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      margin-top: 5px;
+      color: #555;
+    }
+
+    .seekbar {
+      width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      .meditation-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 50px;
+      }
+
+      .video-card {
+        margin: 0;
+      }
+
+      .featured {
+        max-width: 50%;
+      }
+    }
+    /* themes */
+    
+    .daily-themes {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+      color: #111;
+    }
+
+    .daily-themes h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .theme-day {
+      margin-bottom: 25px;
+    }
+
+    .theme-day h4 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .theme-day p {
+      font-size: 1rem;
+      color: #333;
+      margin: 0;
+    }
+
+    @media (max-width: 576px) {
+      .theme-day h4 {
+        font-size: 1.05rem;
+      }
+
+      .theme-day p {
+        font-size: 0.95rem;
+      }
+    }
+      </style>
+</head>
+<body style="background-color: #fceeee;">
+
+  <div class="container-fluid mt-3">
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./asserts/images/logo.png" alt="logo" width="100">
+      </a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link " href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./therapy.html">Therapy</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./meditation.html">Meditation</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <i class="bi bi-search icon-btn"></i>
+        <i class="bi bi-person icon-btn"></i>
+      </div>
+    </nav>
+  </div>
+  <!-- video section -->
+     <section class="meditation-section container">
+    <h3 class="section-title">Meditation</h3>
+    <button class="trial-button">Start Your Free Trial</button>
+
+    <div class="meditation-row">
+      <!-- Left Side -->
+      <div class="featured">
+        <h6>Featured Meditation</h6>
+        <h4>Sleep Meditation</h4>
+        <a href="./discover.html"><button class="trial-button">Start Your Free Trial</button></a>
+      </div>
+
+      <!-- Right Side -->
+      <div class="video-card">
+        <video id="sampleVideo" poster="https://via.placeholder.com/350x400" preload="metadata">
+          <source src="./asserts/video/3327959-hd_1920_1080_24fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="video-overlay" onclick="togglePlay()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#72165b" viewBox="0 0 16 16">
+            <path d="M6 4.5v7l6-3.5-6-3.5z"/>
+          </svg>
+        </div>
+
+        <div class="video-footer">
+          <h6>Soothe Anxiety to Sleep</h6>
+          <input type="range" id="seekBar" class="seekbar" value="0" max="100">
+          <div class="video-time">
+            <span>0:00</span>
+            <span>30:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- themes -->
+   
+  <section class="daily-themes fw-bold">
+    <h3>Daily Themes (5–10 minutes each)</h3>
+
+    <div class="theme-day">
+      <h4>Day 1 – Gratitude</h4>
+      <p>Focus on 3 things you’re thankful for. Feel the warmth they bring.</p>
+    </div>
+
+    <div class="theme-day">
+      <h4>Day 2 – Loving-Kindness</h4>
+      <p>Silently repeat: “May I be happy. May others be happy.”</p>
+    </div>
+
+    <div class="theme-day">
+      <h4>Day 3 – Present Moment Joy</h4>
+      <p>Mindfully notice small joys—breath, light, sound—with full attention.</p>
+    </div>
+
+    <div class="theme-day">
+      <h4>Day 4 – Smile Meditation</h4>
+      <p>Gently smile while breathing slowly. Let the feeling of ease spread.</p>
+    </div>
+
+    <div class="theme-day">
+      <h4>Day 5 – Positive Memories</h4>
+      <p>Recall a joyful moment. Re-experience it with all your senses.</p>
+    </div>
+
+    <div class="theme-day">
+      <h4>Day 6 – Self-Compassion</h4>
+      <p>Send kindness to yourself. Affirm: “I am enough. I deserve joy.”</p>
+    </div>
+
+    <div class="theme-day">
+      <h4>Day 7 – Intentional Joy</h4>
+      <p>Visualize a joyful life. Imagine waking up smiling, living freely.</p>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer text-white">
+  <div class="container-fluid">
+    <div class="row">
+      
+      <!-- Logo -->
+      <div class="col-md-3 text-center text-md-start mb-4 mb-md-0">
+        <div class="logo">
+           <a class="navbar-brand" href="./index.html">
+        <img src="./asserts/images/logo.png" alt="logo" width="100">
+      </a>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="col-md-2 mb-4 mb-md-0">
+        <h5>Navigation</h5>
+        <a href="./index.html">Home</a>
+        <a href="#">Happiness Week</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contact.html">Contact Us</a>
+        <a href="#">Course</a>
+        <a href="#">Meditation</a>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 mb-4 mb-md-0">
+        <h5>Quick links</h5>
+        <a href="./index.html">FAQ</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Help Center</a>
+        <a href="#">Partnership</a>
+      </div>
+
+     <!-- Hours -->
+<div class="col-md-2 mb-4 mb-md-0 d-flex flex-column justify-content-between">
+  <div>
+    <h5>Opening Time</h5>
+    <p class="mb-1">Monday - Sunday</p>
+    <p>9.00 AM To 9.00 PM</p>
+  </div>
+  <div class="mt-auto">
+    <img src="./asserts/images/footer-img.png" alt="meditation" class="footer-img">
+  </div>
+</div>
+
+
+      <!-- Contact -->
+      <div class="col-md-3">
+        <h5>Contact:</h5>
+        <p><i class="bi bi-geo-alt-fill contact-icons"></i> 6, Hethendran Street, <br> Kongu Nagar, Karur - 26</p>
+        <p><i class="bi bi-telephone-fill contact-icons"></i> +9532 32556</p>
+        <p><i class="bi bi-envelope-fill contact-icons"></i> deepluswell@gmail.com</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
